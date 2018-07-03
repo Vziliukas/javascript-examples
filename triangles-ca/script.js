@@ -21,7 +21,7 @@ const createPyramid = (rows) => {
     for (let k = 0; k < rows - i; k++) {
       pyramid += "&nbsp";
     }
-    for (let j = 0; j < i; j++) {
+    for (let j = 0; j <= i; j++) {
       pyramid += "*&nbsp";
     }
     pyramid += "<br>";
@@ -46,8 +46,8 @@ const createRevPyramid = (rows) => {
 
 const clear = () => container.innerHTML = "";
 
-function draw(action, rows) {
-  switch (action) {
+function draw(shape, rows) {
+  switch (shape) {
     case "triangle":
       createTriangle(rows);
       break;
