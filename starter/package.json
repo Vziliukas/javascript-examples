@@ -1,0 +1,16 @@
+{
+  "name": "starter",
+  "version": "0.0.0",
+  "description": "Starter boilerplate for JavaScript projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vytautas Žiliukas",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.13.0"
+  }
+}
