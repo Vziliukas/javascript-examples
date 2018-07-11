@@ -2,7 +2,8 @@
   const form = doc.querySelector("form");
   const section = doc.querySelector("section");
   const inputs = doc.querySelectorAll("input, textarea");
-  const names = [...inputs].map(input => input.name); // Array.from(inputs) other method convert Nodelist to array 
+  // Array.from(inputs) other method convert Nodelist to array
+  const names = [...inputs].map(input => input.name);
 
   const renderCard = details => {
     let list = "";
@@ -33,6 +34,6 @@
     }
   };
 
-	initialize();
+  initialize();
   form.addEventListener("submit", e => handleSubmit(e));
 })(document);

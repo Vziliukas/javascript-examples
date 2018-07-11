@@ -1,8 +1,8 @@
 const container = document.querySelector(".container p");
 const btns = document.querySelectorAll("button");
-const countInput = document.getElementById('count');
+const countInput = document.getElementById("count");
 
-const createTriangle = (rows) => {
+const createTriangle = rows => {
   let triangle = "";
 
   for (let i = 0; i <= rows; i++) {
@@ -14,7 +14,7 @@ const createTriangle = (rows) => {
   container.innerHTML = triangle;
 };
 
-const createPyramid = (rows) => {
+const createPyramid = rows => {
   let pyramid = "";
 
   for (let i = 0; i < rows; i++) {
@@ -29,7 +29,7 @@ const createPyramid = (rows) => {
   container.innerHTML = pyramid;
 };
 
-const createRevPyramid = (rows) => {
+const createRevPyramid = rows => {
   let revPyramid = "";
 
   for (let i = rows; i > 0; i--) {
@@ -44,7 +44,7 @@ const createRevPyramid = (rows) => {
   container.innerHTML = revPyramid;
 };
 
-const clear = () => container.innerHTML = "";
+const clear = () => (container.innerHTML = "");
 
 function draw(shape, rows) {
   switch (shape) {
